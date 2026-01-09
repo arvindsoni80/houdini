@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Hide CodeRabbit Comments",
+  "version": "1.0",
+  "description": "Hide CodeRabbit bot comments on GitHub PRs",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
