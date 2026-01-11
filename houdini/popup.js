@@ -1,16 +1,3 @@
-// DOM Selectors - Constants for element selection
-const SELECTORS = {
-  TIMELINE_ITEM: '.js-timeline-item',
-  TURBO_FRAME: 'turbo-frame[id^="review-thread-or-comment-id-"]',
-  INLINE_CONTAINER: '.js-inline-comments-container',
-  COMMENT_BODY: '.comment-body',
-  AUTHOR_LINK: 'a.author',
-  CODERABBIT_AUTHOR_LINK: 'a.author[href="/apps/coderabbitai"]',
-  SEVERITY_EM: 'em'
-};
-
-// CodeRabbit author identifier
-const CODERABBIT_AUTHOR = 'coderabbit';
 
 // Severity levels to show in UI
 const uiSeverities = [
@@ -352,7 +339,8 @@ function showStatus(message, type) {
  */
 function getAvailableSeverities() {
   try {
-    const comments = document.querySelectorAll('.timeline-comment-group, .js-timeline-item');
+    
+    const comments = document.querySelectorAll('turbo-frame[id^="review-thread-or-comment-id-"]');
     const severityCounts = {};
     
     comments.forEach(comment => {
