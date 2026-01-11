@@ -1,4 +1,4 @@
-# houdini
+# Houdini
 Houdini is a chrome extension to show or hide comments from CodeRabbit and other bots in your GitHub pull request (PR). For CodeRabbit comments you can show or hide all comments or by severity levels. For other bots, you add the name of the bot and then you can show or hide all comments. 
 
 The visibility settings can be saved as default to apply on any PR page. When you change the settings for a specific PR tab, that setting is remembered till the tab is open. 
